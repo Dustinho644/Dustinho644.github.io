@@ -1,32 +1,97 @@
-<p>Hello World!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css"
+    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Rock, Papper, scissors</title>
+</head>
+<body>
 
-<figure>
-    <img src="download.webp" alt="A blue, derpy"
-    with="312" 
-    height="312"/>
-    <figcaption>This is a Dog</figcaption>
-</figure>
 
-<table border="1">
-    <tr>
-        <th colspan="4">favorite coler</th>
-    </tr>
+    <h1>Rock, papper, scissors</h1>
+    <!-- <div class="vl"><img src="./assets/papper.png"/><img src="./assets/rock.png"><img src="/assets/scissors2.png" alt="boom"/> </div> -->
+   
+    <div class="vl">
+        <img src="./assets/rock.png" alt="e" id = "hello">
+        <img src="./assets/papper.png" alt="e" id = "hedw">
+        <img src="./assets/scissors2.png" alt="e" id = "hewwwww">
+    </div>
+    
+    <script>
+        $("#hello").hide();
+        $("#hedw").hide();
+        $("#hewwwww").hide();
+    </script>
+        <script>
 
-    <tr>
-        <th rowspan="3"></th>
-        <td>blue</td>
-        <td>yellow</td>
-        <td>green</td>
-    </tr>
-    <tr>
-        <td>black</td>
-        <td>white</td>
-        <td>gray</td>
-    </tr>
 
-    <tr>
-        <td>red</td>
-        <td>brown</td>
-        <td>pizza</td>
-    </tr>
-</table>
+            var i = 1;
+    
+    var interval = setInterval( increment, 1000);
+    
+    function increment(){
+        i = i % 3 + 1;
+        if (i == 1) {
+            $("#hello").show();
+            $("#hedw").hide();
+            $("#hewwwww").hide();
+        } else if (i == 2) {
+            $("#hello").hide();
+            $("#hedw").show();
+            $("#hewwwww").hide();
+        } else if (i == 3) {
+            $("#hello").hide();
+            $("#hedw").hide();
+            $("#hewwwww").show();
+        }
+    }
+    
+    
+    // todo: 1 is scissors 2 is rock 3 is paper
+        </script>
+    
+    <div class="vl2">
+        <img src="./assets/rock.png" alt="e" id = "hewq">
+        <img src="./assets/papper.png" alt="e" id = "hedww">
+        <img src="./assets/scissors2.png" alt="e" id = "hew">
+    </div>
+
+       
+    <script>
+        $("#hewq").hide();
+        $("#hedww").hide();
+        $("#hew").hide();
+    </script>
+        <script>
+
+
+            var i = 1;
+    
+    var interval = setInterval( helleoo, 1000);
+    
+    function helleoo(){
+        i = i % 3 + 1;
+        if (i == 1) {
+            $("#hewq").show();
+            $("#hedww").hide();
+            $("#hew").hide();
+        } else if (i == 2) {
+            $("#hewq").hide();
+            $("#hedww").show();
+            $("#hew").hide();
+        } else if (i == 3) {
+            $("#hewq").hide();
+            $("#hedww").hide();
+            $("#hew").show();
+        }
+    }
+    
+    
+    // todo: 1 is scissors 2 is rock 3 is paper
+        </script>
+    
+</body>
+</html>
