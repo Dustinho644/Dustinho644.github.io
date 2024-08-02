@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "name": "Launch Edge",
+        "request": "launch",
+        "type": "msedge",
+        "url": "C:/Users/Camper/Desktop/My website/Dustinho644.github.io/index.html",
+        "webRoot": "${workspaceFolder}"
+    }
+    ]
+}   
